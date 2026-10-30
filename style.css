@@ -1,0 +1,47 @@
+/*
+ * style.css: site customizations for the Static-Pedia manual.
+ *
+ * Static-Pedia loads this file after its built-in styles, so anything here
+ * wins. Most restyling only needs CSS custom properties: override them on
+ * :root for both themes, or on :root[data-theme="light"] / [data-theme="dark"]
+ * for one theme. See the Theming page for the full list of variables.
+ *
+ * Delete this file and the wiki falls back to the built-in look.
+ */
+
+/* A slightly wider sidebar and a deeper accent blue in the light theme. */
+:root {
+  --sp-sidebar-width: 12.5rem;
+}
+:root[data-theme="light"] {
+  --sp-accent: #2a5db0;
+  --sp-link: #2a5db0;
+}
+
+/* A custom class the manual uses for small labels: <span class="badge">new</span> */
+.sp-content .badge {
+  display: inline-block;
+  padding: 0 .45em;
+  border-radius: 999px;
+  font-size: .75em;
+  font-weight: 600;
+  line-height: 1.6;
+  vertical-align: .1em;
+  background: var(--sp-accent);
+  color: var(--sp-accent-text);
+}
+
+/* Make the home page's feature grid flow into columns on wide screens. */
+.sp-content .feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+  gap: .75rem;
+  margin: 1em 0 1.5em;
+}
+.sp-content .feature-grid > div {
+  padding: .6em .9em;
+  background: var(--sp-surface-2);
+  border: 1px solid var(--sp-border-light);
+  border-radius: var(--sp-radius);
+}
+.sp-content .feature-grid strong { display: block; }
