@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 300" role="img" aria-label="Placeholder portrait of Jane Doe">
+  <rect width="240" height="300" fill="#f2e2d9"/>
+  <circle cx="120" cy="118" r="52" fill="#b88f7a"/>
+  <path d="M30 300c4-70 44-110 90-110s86 40 90 110z" fill="#b88f7a"/>
+</svg>
