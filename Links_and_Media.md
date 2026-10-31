@@ -127,3 +127,18 @@ Only `https://` URLs whose host exactly matches an entry are kept. Static-Pedia 
 
 > [!WARNING]
 > Embeds load content from another site, so they don't work on an offline or air-gapped wiki and they let that site see who reads the page. Allow only hosts you trust.
+
+## Checking links
+
+`tools/check-links.mjs` finds broken page links, wiki links, images, media, file links and `#anchors` without a browser. It resolves them with exactly the rules on this page:
+
+```sh
+node tools/check-links.mjs            # or: node tools/check-links.mjs path/to/wiki
+```
+
+```text
+Guides/Setup.md:12: broken page link "Instal" -> Guides/Instal.md does not exist
+Guides/Setup.md:20: missing anchor "#frist-run" in Guides/Setup.md (did you mean #first-run?)
+```
+
+It exits with status 1 when anything is broken, so it can run in CI next to `build-index.mjs --check`. External links, code, `<a class="new">` red links and lines containing `<!-- check-links: ignore -->` are skipped.
