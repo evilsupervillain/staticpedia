@@ -19,7 +19,7 @@ Compare with a **relative** Markdown link, which is resolved from this page's fo
 
 Links to pages that don't exist look like normal links. Following one shows a friendly "page not found" page with a way back:
 
-- [[This Page Does Not Exist]]
-- [A broken relative link](Nowhere/Nothing)
+- [[This Page Does Not Exist]] <!-- check-links: ignore -->
+- [A broken relative link](Nowhere/Nothing) <!-- check-links: ignore -->
 
 To flag a link as pointing to a page that hasn't been written yet, give it the class `new` in HTML. It turns red: <a class="new" href="Not_Written_Yet">Not written yet</a>.

@@ -13,6 +13,7 @@
 - [Settings panel](Settings)
 - [Search](Search)
 - [FAQ and limitations](FAQ)
+- [For AI agents](skills/staticpedia/SKILL)
 
 ### Examples
 - [Overview](Examples/)
