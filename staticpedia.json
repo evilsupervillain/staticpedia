@@ -1,0 +1,19 @@
+{
+  "siteName": "Static-Pedia",
+  "tagline": "The single-file wiki engine",
+  "logo": "images/logo.svg",
+  "favicon": "images/logo.svg",
+  "lang": "en",
+  "defaultTheme": "system",
+  "defaults": {
+    "fontSize": "medium",
+    "width": "narrow",
+    "toc": true,
+    "sidebar": true
+  },
+  "tocMinHeadings": 3,
+  "showSourceLink": true,
+  "showLastModified": true,
+  "iframeHosts": ["www.youtube-nocookie.com"],
+  "searchExclude": ["README.md", "CLAUDE.md"]
+}

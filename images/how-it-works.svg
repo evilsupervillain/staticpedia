@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 220" role="img" aria-label="Diagram: the browser loads index.html, which fetches a Markdown file and renders it as a wiki page" font-family="system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif">
+  <rect width="760" height="220" rx="10" fill="#f8f9fa" stroke="#c8ccd1"/>
+  <defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto"><path d="M0 0 10 5 0 10z" fill="#54595d"/></marker></defs>
+  <g>
+    <rect x="24" y="50" width="200" height="120" rx="8" fill="#fff" stroke="#3366cc" stroke-width="2"/>
+    <text x="124" y="84" text-anchor="middle" font-size="17" font-weight="700" fill="#202122">1. Browser</text>
+    <text x="124" y="112" text-anchor="middle" font-size="14" fill="#54595d">opens</text>
+    <text x="124" y="134" text-anchor="middle" font-size="14" font-family="ui-monospace, Menlo, Consolas, monospace" fill="#202122">/wiki/?p=People/Ada</text>
+  </g>
+  <path d="M232 110h56" stroke="#54595d" stroke-width="2" marker-end="url(#arr)"/>
+  <g>
+    <rect x="296" y="50" width="200" height="120" rx="8" fill="#fff" stroke="#3366cc" stroke-width="2"/>
+    <text x="396" y="84" text-anchor="middle" font-size="17" font-weight="700" fill="#202122">2. index.html</text>
+    <text x="396" y="112" text-anchor="middle" font-size="14" fill="#54595d">fetches</text>
+    <text x="396" y="134" text-anchor="middle" font-size="14" font-family="ui-monospace, Menlo, Consolas, monospace" fill="#202122">/wiki/People/Ada.md</text>
+  </g>
+  <path d="M504 110h56" stroke="#54595d" stroke-width="2" marker-end="url(#arr)"/>
+  <g>
+    <rect x="568" y="50" width="168" height="120" rx="8" fill="#fff" stroke="#3366cc" stroke-width="2"/>
+    <text x="652" y="84" text-anchor="middle" font-size="17" font-weight="700" fill="#202122">3. Wiki page</text>
+    <text x="652" y="112" text-anchor="middle" font-size="14" fill="#54595d">Markdown → safe</text>
+    <text x="652" y="134" text-anchor="middle" font-size="14" fill="#54595d">HTML, in-browser</text>
+  </g>
+  <text x="380" y="204" text-anchor="middle" font-size="13" fill="#54595d">No server code, no build step: any static host works.</text>
+</svg>

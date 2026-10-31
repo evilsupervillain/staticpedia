@@ -1,0 +1,24 @@
+- [Main page](Index)
+- [All pages](?special=AllPages)
+- [Random page](?special=Random)
+
+### Manual
+- [Installation](Installation)
+- [GitHub Pages](GitHub_Pages)
+- [Writing pages](Writing_Pages)
+- [Links and media](Links_and_Media)
+- [Special files](Special_Files)
+- [Configuration](Configuration)
+- [Theming](Theming)
+- [Settings panel](Settings)
+- [Search](Search)
+- [FAQ and limitations](FAQ)
+
+### Examples
+- [Overview](Examples/)
+- [Article with infobox](Examples/People/John_Doe)
+- [Nested folders](Examples/People/)
+- [Tables](Examples/Tables)
+- [Images and media](Examples/Images_and_Media)
+- [Markdown showcase](Examples/Markdown_Showcase)
+- [Wiki links](Examples/Wiki_Links)
