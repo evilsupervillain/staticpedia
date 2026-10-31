@@ -1693,7 +1693,9 @@ function renderArticle(route, res) {
 
 /* Built-in pages are assembled with h(), so URL-supplied text is never parsed as HTML. */
 function renderBuiltin(title, ...children) {
-  content().replaceChildren(h('h1', { id: 'page-title' }, title), ...children);
+  // Flatten and drop empty values like h() does: replaceChildren() would stringify arrays and null.
+  content().replaceChildren(h('h1', { id: 'page-title' }, title),
+    ...children.flat(Infinity).filter(c => c != null && c !== false));
   setTitle(title);
   setPageInfo([]);
 }
