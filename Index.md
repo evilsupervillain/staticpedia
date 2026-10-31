@@ -65,6 +65,7 @@ When someone visits `?p=People/Ada`, `index.html` fetches `People/Ada.md` from t
 | [Settings panel](Settings) | The gear menu, what readers can change, how it is stored |
 | [Search](Search) | The search box, `pages.json`, the generator script, GitHub Actions |
 | [FAQ and limitations](FAQ) | Troubleshooting and the things Static-Pedia deliberately does not do |
+| [Instructions for AI agents](skills/staticpedia/SKILL) | A compact, rule-by-rule guide for AI coding agents that install Static-Pedia and write wikis |
 
 The [Examples](Examples/) section shows what the renderer can do: an [article with an infobox](Examples/People/John_Doe), [tables](Examples/Tables), [images and media](Examples/Images_and_Media), and a [tour of the Markdown syntax](Examples/Markdown_Showcase).
 

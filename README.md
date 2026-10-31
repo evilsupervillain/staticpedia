@@ -49,12 +49,30 @@ Examples/             sample pages, images and media
 images/               images used by the manual
 tools/build-index.mjs pages.json generator (Node.js, no dependencies)
 tools/build_index.py  the same generator in Python
+tools/check-links.mjs link and anchor checker (Node.js, no dependencies)
+skills/staticpedia/   instructions for AI agents (a Claude skill)
 ```
 
 Rebuild the search index after editing pages:
 
 ```sh
 node tools/build-index.mjs        # or: python3 tools/build_index.py
+```
+
+## Using Static-Pedia from an AI agent
+
+[`skills/staticpedia/SKILL.md`](skills/staticpedia/SKILL.md) tells an AI coding agent how to install Static-Pedia into another project, configure and style it, write the documentation or encyclopedia, and verify the result. Use it as a Claude skill by copying the `skills/staticpedia/` folder into a project's `.claude/skills/` (or `~/.claude/skills/` for every project), or paste its contents into a session's instructions. It can also be fetched directly:
+
+```sh
+mkdir -p .claude/skills/staticpedia
+curl -fsSL https://raw.githubusercontent.com/evilsupervillain/staticpedia/master/skills/staticpedia/SKILL.md \
+  -o .claude/skills/staticpedia/SKILL.md
+```
+
+Check links and anchors after editing pages:
+
+```sh
+node tools/check-links.mjs        # exits 1 and lists problems if anything is broken
 ```
 
 ## License
