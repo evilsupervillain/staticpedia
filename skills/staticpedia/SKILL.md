@@ -1,7 +1,33 @@
 ---
 name: staticpedia
 description: Add a Static-Pedia wiki to a project and write its content. Static-Pedia is a single self-contained index.html that renders a folder of Markdown files as a Wikipedia-style site on any static host (GitHub Pages, S3, nginx, python -m http.server), at the domain root or under a sub-path. Use when asked to create project documentation, a docs site, a knowledge base, a wiki or an encyclopedia made of Markdown that must work without a server or a build step.
+license: MIT (see the notice below)
 ---
+
+<!--
+Static-Pedia skill: https://github.com/evilsupervillain/staticpedia
+
+SPDX-License-Identifier: MIT
+Copyright (c) 2026 evilsupervillain
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+-->
 
 # Static-Pedia: install it, configure it, write the wiki
 
@@ -17,7 +43,7 @@ Raw files: `https://raw.githubusercontent.com/evilsupervillain/staticpedia/maste
 
 ## Hard rules
 
-1. **Do not modify `index.html`.** Copy it byte-for-byte. All customization goes in the special files below. The only exception is the user explicitly asking for a new feature; then say so and keep the changes minimal.
+1. **Do not modify `index.html`.** Copy it byte-for-byte, including the MIT license notice at its top. The tools carry the same notice; keeping these notices is the only condition of the license, and it needs no other attribution in the project. All customization goes in the special files below. The only exception is the user explicitly asking for a new feature; then say so and keep the changes minimal.
 2. **Home page is `Index.md`** with a capital `I`. `index.md` does not work on case-sensitive hosts such as GitHub Pages and Linux servers, which are the common case.
 3. **Use relative links only** (rules in [Links](#links-the-rules-that-matter-most)). Never write host-absolute URLs to your own pages and never hard-code the deploy path, such as `/my-repo/`.
 4. **GitHub Pages needs an empty `.nojekyll`** at the published root. Without it, `_Sidebar.md` and `_Footer.md` are not published and `.md` files with front matter get converted to HTML (every such page then 404s).

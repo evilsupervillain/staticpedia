@@ -77,4 +77,6 @@ node tools/check-links.mjs        # exits 1 and lists problems if anything is br
 
 ## License
 
-MIT.
+[MIT](https://github.com/evilsupervillain/staticpedia/blob/master/LICENSE). Copyright (c) 2026 evilsupervillain.
+
+`index.html`, the tools in `tools/` and `skills/staticpedia/SKILL.md` each carry the full license notice at the top. You can copy them into any project, whatever its license, and change them freely. The only condition is to keep that notice in the copied files. Wiki content you write with Static-Pedia is yours and is not covered by this license.
