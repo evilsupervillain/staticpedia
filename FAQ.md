@@ -78,6 +78,10 @@ Yes. Each folder with its own `index.html` is an independent wiki with its own `
 
 Yes. The print stylesheet hides the header, sidebar and buttons and prints just the article.
 
+### What license is Static-Pedia under?
+
+The [MIT License](https://github.com/evilsupervillain/staticpedia/blob/master/LICENSE). You can copy `index.html` and the tools into any project, open source or proprietary and under any license, and modify them. Keep the license notice at the top of each copied file. That notice is all the attribution required. Your own pages, stylesheets and configuration are yours; the license doesn't cover the content of your wiki.
+
 ### Does it use cookies or track readers?
 
 No. The only thing stored is the reader's settings, in their own browser's `localStorage`, and it is never sent anywhere.
