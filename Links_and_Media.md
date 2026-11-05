@@ -83,6 +83,14 @@ For sizes, captions and floating, use HTML:
 
 `<picture>`, `srcset` and `sizes` work too, and every URL in them is rewritten the same way.
 
+### Full-screen viewing
+
+Click or tap an image to open it full screen. With the keyboard, Tab to it and press Enter. The caption comes from the image's `<figcaption>`, or else its title or alt text. To close the viewer, click anywhere or press Esc. Images inside a link follow the link instead. To turn the viewer off for one image, or for every image inside an element, add `class="no-zoom"`:
+
+```html
+<img src="images/logo.svg" alt="Logo" class="no-zoom">
+```
+
 ## Video and audio
 
 Use the HTML elements directly. `src`, `poster` and the `src` of every `<source>` and `<track>` are resolved relative to the page:
